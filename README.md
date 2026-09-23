@@ -65,28 +65,13 @@ Instead of making guests navigate through multiple hotel pages, menus, filters, 
 | ⚠️ Error Handling    | Controlled failure handling        |
 
 
-🤖 AI HOTEL CONCIERGE
-
-Atithi Sathi AI is designed around natural conversation.
-
-
-┌─────────────────────────────────────────────┐
-│              ATITHI SATHI AI                │
-├─────────────────────────────────────────────┤
-│                                             │
-│ 👤 Does the hotel have a swimming pool?     │
-│                                             │
-│ 🤖 Yes! The hotel has a swimming pool       │
-│    available for guests.                    │
-│                                             │
-└─────────────────────────────────────────────┘
 
 🧠 AI TOOL CALLING
 
 The most important architectural concept is that the AI does not directly access the database.
 
 Instead, the AI can request a backend tool.
-
+```text
                  USER
                    │
                    ▼
@@ -133,7 +118,7 @@ Instead, the AI can request a backend tool.
               ▼
             Guest
 
-
+```
 🌐 EXTERNAL HOTEL SEARCH
 
 Atithi Sathi AI can use external hotel search services when additional hotel information is required.
@@ -141,7 +126,7 @@ Atithi Sathi AI can use external hotel search services when additional hotel inf
 Where configured, external hotel search can be integrated through services such as SerpApi.
 
 Architecture:
-
+```text
 Guest
   ↓
 AI
@@ -155,11 +140,11 @@ Search Results
 AI
   ↓
 Guest
-
+```
 🗄️ DATABASE ARCHITECTURE
 
 Structured hotel information is handled through the backend data layer.
-
+```text
                 BACKEND
                    │
                    ▼
@@ -174,10 +159,10 @@ Structured hotel information is handled through the backend data layer.
           │                 │
           ▼                 ▼
       Amenities          Services
-
+```
 
 🔄 COMPLETE REQUEST LIFECYCLE
-
+```text
 01. Guest sends message
             ↓
 02. React sends API request
@@ -205,7 +190,7 @@ Structured hotel information is handled through the backend data layer.
 13. React displays response
             ↓
 14. Guest receives answer
-
+```
 
 🏗️ SYSTEM ARCHITECTURE
 
@@ -244,6 +229,7 @@ Backend Tools
 
 🔐 AI PROVIDER CONFIGURATION
 
+```text
 
 AI_PROVIDER=gemini
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
@@ -295,11 +281,11 @@ Security is a core part of the application architecture.
 | 🧪 Testing            | Project-configured test suite |
 | 📦 Package Management | npm / pip                     |
 | 🔀 Version Control    | Git / GitHub                  |
-
+```
 
 📁 PROJECT STRUCTURE
 
-
+```text
 Atithi-Sathi-AI/
 │
 ├── backend/
@@ -346,7 +332,7 @@ Atithi-Sathi-AI/
 ├── README.md
 ├── .gitignore
 └── ...
-
+```
 
 💻 LOCAL DEVELOPMENT SETUP
 
@@ -533,7 +519,7 @@ http://localhost:5173
 
 
 🔌 FRONTEND → BACKEND FLOW
-
+```text
 React
   │
   │ HTTP
@@ -552,13 +538,13 @@ Response
   │
   ▼
 React
-
+```
 
 
 🧪 END-TO-END TEST FLOW
 
 The most important test is the complete real-world flow.
-
+```text
 ┌─────────────────────────────────────────────┐
 │             E2E AI TEST                     │
 ├─────────────────────────────────────────────┤
@@ -586,10 +572,10 @@ The most important test is the complete real-world flow.
 │ 11. Guest Sees Response                     │
 │                                             │
 └─────────────────────────────────────────────┘
-
+```
 
 ☁️ DEPLOYMENT ARCHITECTURE
-
+```text
                     INTERNET
                         │
              ┌──────────┴──────────┐
@@ -609,14 +595,14 @@ The most important test is the complete real-world flow.
                             │
                             ▼
                           USERS
-
+```
 
 
 🧠 FUTURE AI ARCHITECTURE
 
 The long-term architecture can evolve toward:
 
-
+```text
                     ATITHI SATHI AI
                            │
                            ▼
@@ -637,7 +623,7 @@ The long-term architecture can evolve toward:
                            ▼
                     Guest Response
 
-
+```
 🌍 MULTILINGUAL VISION
 
 Future versions can support multilingual guest conversations.
@@ -654,7 +640,7 @@ Kannada
 
 
 🎙️ VOICE ASSISTANT VISION
-
+```text
 Future architecture:
 
 Guest Voice
@@ -674,7 +660,7 @@ Text-to-Speech
 Guest Voice
 
 
-
+```
 
 
 

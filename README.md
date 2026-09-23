@@ -209,11 +209,13 @@ Structured hotel information is handled through the backend data layer.
 
 🏗️ SYSTEM ARCHITECTURE
 
-<img width="2028" height="820" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/91f5681a-9f85-4ff6-b49c-39464589620b" />
+<img width="2028" height="820" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/5a2c47bd-f387-4c1f-9674-8fad6a0d14d6" />
+
 
 🔄 AI REQUEST FLOW
 
-<img width="3064" height="2618" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/87453974-6d6a-4b9b-b493-f55d393ca666" />
+<img width="3064" height="2618" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/3bc605c1-31d7-477e-a7c9-422e30d142fe" />
+
 
 
 🧠 GEMINI INTEGRATION

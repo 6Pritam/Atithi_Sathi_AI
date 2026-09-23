@@ -17,22 +17,6 @@
 
 Instead of requiring guests to navigate through multiple pages, menus, FAQs, or hotel information documents, Otithi Sathi AI allows them to simply ask questions in natural language.
 
-For example:
-
-```text
-"What amenities does the hotel have?"
-
-"Does the hotel have a swimming pool?"
-
-"What is the check-in time?"
-
-"Do you have Wi-Fi?"
-
-"Find me a hotel in Indiranagar."
-
-"I need a room for 2 guests from October 10 to October 12."
-
-"Is there availability for those dates?"
 
 
 ✨ Key Features

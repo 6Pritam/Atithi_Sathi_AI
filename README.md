@@ -36,17 +36,11 @@ For example:
 
 
 ✨ Key Features
+
 🤖 AI Hotel Guest Assistant
 
 Otithi Sathi AI provides a conversational interface where guests can ask questions naturally instead of navigating traditional hotel menus.
 
-Example:
-
-Guest:
-"Does the hotel have a gym?"
-
-AI:
-"Yes. The hotel has a fitness center available for guests."
 
 🏨 Hotel Information
 
@@ -65,61 +59,23 @@ Check-out information
 Frequently asked questions
 Guest-related information
 
-Example:
-
-Guest:
-"What time is check-in?"
-
-Otithi Sathi AI:
-"Check-in starts at 2:00 PM."
 
 🛏️ Room Information
 
 Guests can ask questions about available room types and room-related information.
 
-Examples:
 
-"What rooms are available?"
-
-"Tell me about the Deluxe Room."
-
-"Does the hotel have a family room?"
-
-"How many guests can stay in this room?"
-
-"Does this room include breakfast?"
 
 🧳 Hotel Amenities
 
 Guests can ask about available hotel amenities and services.
 
-Examples:
-
-"Does the hotel have a swimming pool?"
-
-"Is Wi-Fi available?"
-
-"Do you have a gym?"
-
-"Is parking available?"
-
-"Does the hotel have a restaurant?"
 
 📋 Hotel Policies
 
 Guests can ask about hotel policies without manually searching through documents.
 
-Examples:
 
-"What is the cancellation policy?"
-
-"What is the check-in time?"
-
-"What is the check-out time?"
-
-"Are pets allowed?"
-
-"Is early check-in available?"
 
 ❓ Hotel FAQ
 
@@ -142,37 +98,11 @@ Relevant hotel information
 
 Natural-language response
 
+
 🔎 Hotel Search
 
 Otithi Sathi AI can understand natural-language hotel search requests.
 
-Example:
-
-"Find me a hotel in Indiranagar."
-
-The assistant can identify:
-
-Intent:
-Hotel Search
-
-Location:
-Indiranagar
-
-📅 Hotel Availability
-
-Guests can provide:
-
-Location
-Check-in date
-Check-out date
-Number of guests
-Other relevant search requirements
-
-Example:
-
-"I need a hotel in Bangalore
-for 2 guests
-from October 10 to October 12."
 
 🔧 AI Tool Calling
 
@@ -205,38 +135,6 @@ Guest
 
 The AI orchestration layer determines what should happen after receiving a guest request.
 
-For example:
-User:
-"Find me a hotel in Indiranagar."
-
-        ↓
-
-AI understands:
-Hotel search request
-
-        ↓
-
-Tool:
-search_hotels
-
-        ↓
-
-Arguments:
-{
-    "location": "Indiranagar"
-}
-
-        ↓
-
-Backend executes search
-
-        ↓
-
-Results returned
-
-        ↓
-
-AI generates final response
 
 🛠️ Backend Tools
 
@@ -274,6 +172,7 @@ The exact available tools are determined by the current backend implementation.
 🗄️ Data Architecture
 
 Otithi Sathi AI can use a combination of internal and external data sources.
+
                   ┌────────────────────┐
                   │    Guest Request   │
                   └─────────┬──────────┘
@@ -296,6 +195,8 @@ Otithi Sathi AI can use a combination of internal and external data sources.
                             ↓
                     Guest Response
 
+
+
 🌐 External Hotel Data
 
 Where required, Otithi Sathi AI can use external hotel data services to supplement internal information.
@@ -312,47 +213,19 @@ External Hotel Search
           ↓
     Unified Response
 
+
+
 💬 Conversational Context
 
 Otithi Sathi AI is designed to understand follow-up questions within the conversation.
 
-Example:
 
-Guest:
-"Find hotels in Indiranagar."
-
-AI:
-"Here are some hotels in Indiranagar..."
-
-Guest:
-"Which one has a swimming pool?"
-
-AI:
-"Among the available options, ..."
 
 🧠 Context-Aware Interaction
 
 The assistant can use information from previous turns when processing follow-up requests.
 
-For example:
 
-Guest:
-"I need a hotel in Bangalore."
-
-AI:
-"Sure. What dates are you travelling?"
-
-Guest:
-"October 10 to October 12."
-
-AI:
-"Got it. How many guests?"
-
-Guest:
-"Two adults."
-
-AI:
-"Here are suitable options..."
 
 🛡️ Validation
 
@@ -377,29 +250,7 @@ Missing Information
       ↓
 Ask User for Required Information
 
-⚠️ Error Handling
 
-Otithi Sathi AI includes application-level error handling for situations such as:
-
-Invalid requests
-Missing information
-AI provider errors
-Tool execution failures
-Database errors
-External API failures
-Temporary service failures
-
-Instead of exposing internal errors directly to the guest, the system can return a controlled response.
-
-Example:
-
-Backend / AI Failure
-        ↓
-Error Handling Layer
-        ↓
-Safe Application Response
-        ↓
-Guest
 
 🔄 Fallback Handling
 
@@ -420,6 +271,8 @@ Response    External Search
               Results
                  ↓
              Response
+
+
 
 🎨 User Experience
 
@@ -492,7 +345,11 @@ Add additional providers
 Test AI workflows
 Centralize error handling
 Maintain consistent application behavior
+
+
 🛠️ Technology Stack
+
+
 Layer	Technology
 Frontend	React
 Backend	FastAPI
@@ -568,6 +425,8 @@ DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE
 Run database migrations if the project uses Alembic:
 
 alembic upgrade head
+
+
 🚀 Start Backend
 
 From the backend directory:
@@ -585,6 +444,8 @@ http://localhost:8000/docs
 ReDoc:
 
 http://localhost:8000/redoc
+
+
 ⚛️ Frontend Setup
 
 Open another terminal.
@@ -604,6 +465,8 @@ npm run dev
 The frontend will normally be available at:
 
 http://localhost:5173
+
+
 🔌 API Architecture
 
 The frontend communicates with the FastAPI backend through HTTP APIs.
@@ -631,6 +494,8 @@ Database operations
 External API calls
 Error handling
 Response formatting
+
+
 🧪 Testing
 
 The project should test the major AI and application workflows.
@@ -689,38 +554,10 @@ Validation	Are invalid inputs handled correctly?
 Error Handling	Are failures handled safely?
 Response Quality	Is the final response clear and useful?
 Latency	Is the interaction reasonably fast?
-🔍 Example Conversations
-Hotel Information
-Guest:
-"Does the hotel have a swimming pool?"
 
-AI:
-"Yes, the hotel has a swimming pool available for guests."
-Hotel Search
-Guest:
-"Find me a hotel in Indiranagar."
 
-AI:
-"Sure. I'll search for available hotels in Indiranagar."
-Availability
-Guest:
-"I need a hotel for two adults."
-
-AI:
-"Sure. What check-in and check-out dates would you like?"
-Follow-up
-Guest:
-"Find hotels in Bangalore."
-
-AI:
-"Here are some hotel options in Bangalore."
-
-Guest:
-"Which one has a gym?"
-
-AI:
-"Let me check the available amenities for those hotels."
 🔐 Security Architecture
+
 
 Security is an important part of the platform.
 
@@ -740,33 +577,6 @@ AI and external API credentials remain on the backend.
 
 The frontend should never directly receive or expose private API credentials.
 
-🛡️ API Key Protection
-
-Never store credentials directly inside source code.
-
-Bad:
-
-API_KEY = "real-api-key"
-
-Good:
-
-API_KEY = os.getenv("API_KEY")
-
-Use environment variables and secure deployment secrets.
-
-🚨 Error Handling Strategy
-
-The system should gracefully handle:
-
-AI Failure
-Database Failure
-External API Failure
-Invalid Input
-Missing Parameters
-Tool Failure
-Network Failure
-
-The user should receive a useful response instead of internal stack traces or sensitive implementation details.
 
 📈 Scalability
 
@@ -797,6 +607,8 @@ Observability
 Horizontal backend scaling
 External API caching
 AI response optimization
+
+
 🧠 Why Tool Calling?
 
 Traditional chatbot:
@@ -825,7 +637,9 @@ Final Response
 
 This allows the assistant to move beyond static responses and interact with application data and services.
 
+
 🏨 Product Architecture
+
 
 Otithi Sathi AI can be viewed as three major layers:
 
@@ -868,6 +682,8 @@ Together:
 │ Database + Hotel Tools +    │
 │ External Search + APIs      │
 └─────────────────────────────┘
+
+
 🗺️ Roadmap
 
 Future improvements can include:
@@ -917,6 +733,9 @@ Recommended development workflow:
 
 
 📌 Current Architecture Summary
+
+
+
                     OTITHI SATHI AI
                           │
                           ▼
@@ -962,6 +781,9 @@ Recommended development workflow:
                           │
                           ▼
                         Guest
+
+
+
 🎯 Project Goals
 
 Otithi Sathi AI is designed around a simple principle:

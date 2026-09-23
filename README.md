@@ -29,7 +29,7 @@ Instead of making guests navigate through multiple hotel pages, menus, filters, 
 
 ### 💬 Simply ask:
 
-```text
+
 "Find me a hotel in Indiranagar."
 
 "Does this hotel have a swimming pool?"
@@ -209,12 +209,16 @@ Structured hotel information is handled through the backend data layer.
 
 🏗️ SYSTEM ARCHITECTURE
 
-<img width="2028" height="820" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/5a2c47bd-f387-4c1f-9674-8fad6a0d14d6" />
+
+![logo](https://github.com/6Pritam/Atithi_Sathi_AI/blob/main/mermaid-diagram.png)
+
 
 
 🔄 AI REQUEST FLOW
 
-<img width="3064" height="2618" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/3bc605c1-31d7-477e-a7c9-422e30d142fe" />
+
+![logo](https://github.com/6Pritam/Atithi_Sathi_AI/blob/main/mermaid-diagram%20(1).png)
+
 
 
 

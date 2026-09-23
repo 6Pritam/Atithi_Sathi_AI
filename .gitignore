@@ -1,0 +1,28 @@
+# Environment variables & secrets
+.env
+*.env
+Backend/.env
+Fronted/atithi_saathi_app/.env
+
+# Python
+venv/
+.venv/
+Backend/venv/
+Backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+Backend/atithi_saathi.db
+*.db
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+Fronted/atithi_saathi_app/node_modules/
+dist/
+Fronted/atithi_saathi_app/dist/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
